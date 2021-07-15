@@ -98,14 +98,10 @@ function generatePassword() {
     console.log("password", passwordF)
   }
   //creating a string from passswordF 
-  var passwordString = (passwordF.toString())
+  var passwordString = (passwordF.join(""))
   console.log(passwordString)
   //puting that string into the password box ask google web API. 
-  
+  document.getElementById("password").innerHTML = passwordString
 };
 
-
-
-
-// Add event listener to generate button
 
